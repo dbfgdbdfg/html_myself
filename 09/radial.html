@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>원형 그러데이션</title>
+  <style>
+		div {
+			width:200px;
+			height:100px;
+			margin:10px;
+		}
+		.grad1{
+			background:red;
+			background:radial-gradient(white,yellow, red);
+		}
+		.grad2{
+			background:red;
+			background:radial-gradient(circle, white,yellow, red); 
+		}
+        .grad3 {
+            background: #ffffff;
+            background: radial-gradient(circle at 20% 20%, white,blue);
+        }
+        .grad4 {
+            background: #ffffff;
+            background: radial-gradient(white,green 10%,blue 60%);
+        }
+  </style>
+</head>
+<body>
+  <div class="grad1">타원</div>
+  <div class="grad2">원</div>
+  <div class="grad3">시작점을 이동</div>
+  <div class="grad4">색상중지점 사용</div>
+</body>
+</html>
