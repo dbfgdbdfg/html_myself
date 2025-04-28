@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS float 속성</title>
+  <style>
+    img {
+      float:left;  /* 왼쪽에 떠 있게 */
+      margin-right:40px;
+    }
+    div {
+			padding:20px;
+			margin:10px;
+		}
+    #box1{
+      background: #9add14;
+      float: left;
+    }
+		#box2 {
+			background: #0094ff;
+      float:right;
+		}
+		#box3 {
+			background:#a874ff;
+			clear:left;  /* 플로팅 해제 */
+		}
+
+  </style>
+</head>
+<body>
+  <div id="box1">색을 하고 왼쪽으로</div>
+  <div id="box2">색을 하고 오른쪽으로</div>
+  <div id="box3">float를 안한다면</div>
+  <p>이건 사진위에 들어가는거고</p>
+  <img src="images/tree.png">
+  <p>이건 사진 옆에</p>
+</body>
+</html>
