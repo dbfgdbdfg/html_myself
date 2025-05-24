@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>var 사용해보기</title>
+</head>
+<body>
+	<script>
+    var sum1 =1; //전역변수 선언		
+		function addNumber() { 								
+            sum2 = 1+1;
+            var sum3 = 1 + 2; // 지역변수 선언			
+		}
+    addNumber();
+    console.log(sum1);  //전역변수이니까 그대로 1나옴
+    console.log(sum2);  //var없애면 젼역변수로 생각
+    console.log(sum3); //지역변수니까 undefined 
+  </script>
+</body>
+</html>

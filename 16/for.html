@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 함 해보자</title>
+    <style>
+		body {
+			font-size:1.5em;
+			line-height:2;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+    <h2>구구단 5까지</h2>
+    <div class = "container">
+	<script>;
+        for (let q=1;q<6;q++){
+            document.write(`<h3>${q}단</h3>`);
+            for (let w = 1; w < 6; w++) {
+                document.write(`${q}x${w} = ${q*w}<br>`);
+            }
+        }
+	</script>
+</body>
+</html>
